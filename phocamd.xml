@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="fields" method="upgrade" version="6.0">
+	<name>plg_fields_phocamd</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>01/06/2026</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>6.1.0Beta</version>
+	<description>PLG_FIELDS_PHOCAMD_DESCRIPTION</description>
+	<namespace path="src">Phoca\Plugin\Fields\Phocamd</namespace>
+	<projectName>PhocaMDFieldsPlugin</projectName>
+
+	<media destination="plg_fields_phocamd" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>joomla.asset.json</filename>
+	</media>
+
+	<files>
+		<folder>tmpl</folder>
+		<folder>src</folder>
+		<folder>vendor</folder>
+		<folder plugin="phocamd">services</folder>
+		<filename plugin="phocamd">manifest.xml</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_fields_phocamd.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_fields_phocamd.sys.ini</language>
+	</languages>
+
+	<administration>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.plg_fields_phocamd.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.plg_fields_phocamd.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="extract_title" type="radio" layout="joomla.form.field.radio.switcher" default="0" label="PLG_FIELDS_PHOCAMD_EXTRACT_TITLE_LABEL" description="PLG_FIELDS_PHOCAMD_EXTRACT_TITLE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="PLG_FIELDS_PHOCAMD" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaMDFieldsPlugin/master/manifest.xml]]></server>
+	</updateservers>
+</extension>

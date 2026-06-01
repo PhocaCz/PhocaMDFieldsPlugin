@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "plg_fields_phocamd",
+  "version": "1.0.0",
+  "description": "Joomla web assets for Phoca MD Plugin",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "plg_fields_phocamd.admin",
+      "type": "style",
+      "uri": "plg_fields_phocamd/phocamd.css"
+    },
+    {
+      "name": "plg_fields_phocamd.admin",
+      "type": "script",
+      "uri": "plg_fields_phocamd/phocamd.js"
+    }
+  ]
+}

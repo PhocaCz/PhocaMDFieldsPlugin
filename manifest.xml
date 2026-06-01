@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<updates>
+	<update>
+		<name><![CDATA[ Phoca MD Fields Plugin ]]></name>
+		<description><![CDATA[ Phoca MD Fields Plugin - provides a custom Markdown field for Joomla articles. Instead of using a WYSIWYG editor like TinyMCE, you write your content in pure Markdown. On saving the article, the plugin automatically converts your Markdown into clean HTML and injects it directly into the standard Joomla Introtext and Fulltext fields. ]]></description>
+		<element>phocamd</element>
+		<folder>fields</folder>
+		<type>plugin</type>
+		<version>6.1.0Beta</version>
+		<infourl title="Phoca MD Fields Plugin 6.1.0Beta">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaMDFieldsPlugin/releases/download/6.1.0Beta/plg_fields_phocamd_v6.1.0Beta.zip</downloadurl>
+		</downloads>
+		<sha512>256f2964e39b95b2757a0ce2b167b7f3fdebf4e4fcb275bfd9542a8c35bb0f38b37bee3e47496e4cafe1a06896998c4bed1715cf1d3255605cf61cd227011fa4</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="(5|6)\.*"/>
+		<client>site</client>
+	</update>
+</updates>

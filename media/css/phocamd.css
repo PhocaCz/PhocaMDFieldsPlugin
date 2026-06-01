@@ -1,0 +1,14 @@
+/* Phoca MD field — monospace textarea */
+textarea.phocamd-field {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+    min-height: 400px;
+    width: 100%;
+    tab-size: 4;
+    line-height: 1.5;
+}
+
+.ph-md-warning {
+    margin-bottom: 1rem;
+}
+
+
