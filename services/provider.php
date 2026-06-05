@@ -35,7 +35,7 @@ return new class () implements ServiceProviderInterface {
         $container->set(
             PluginInterface::class,
             function (Container $container) {
-                $plugin = new Phocamd(
+                 $plugin = new Phocamd(
                     (array) PluginHelper::getPlugin('fields', 'phocamd')
                 );
                 $plugin->setDispatcher($container->get(DispatcherInterface::class));
