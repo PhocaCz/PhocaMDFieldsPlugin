@@ -6,19 +6,20 @@
 		<element>phocamd</element>
 		<folder>fields</folder>
 		<type>plugin</type>
-		<version>6.1.0Beta2</version>
-		<infourl title="Phoca MD Fields Plugin 6.1.0Beta2">https://www.phoca.cz/</infourl>
+		<version>6.2.0</version>
+		<infourl title="Phoca MD Fields Plugin 6.2.0">https://www.phoca.cz/</infourl>
+		<changelogurl>https://raw.githubusercontent.com/PhocaCz/PhocaMDFieldsPlugin/master/changelog6.xml</changelogurl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaMDFieldsPlugin/releases/download/6.1.0Beta2/plg_fields_phocamd_v6.1.0Beta2.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaMDFieldsPlugin/releases/download/6.2.0/plg_fields_phocamd_v6.2.0.zip</downloadurl>
 		</downloads>
-		<sha512>7c633e402fafe898d5e3d599ffe3a3b0f6ae0aa3b4a66220a4f7e24632aadf4a6886068abca94450902920129dbf6d5c1147bd16497fcbe4ec6fa060ce8c7000</sha512>
+		<sha512>8c823e39c4a4159909e32ff83a8d46316a697c284aa9894b58223f0d9aa7fc63dcea91ec5e1d99ab97344352d6b7316ed033ae858f09d3308c4b653300f05208</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
 		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
-		<targetplatform name="joomla" version="(5|6)\.*"/>
+		<targetplatform name="joomla" version="6\.*"/>
 		<client>site</client>
 	</update>
 </updates>

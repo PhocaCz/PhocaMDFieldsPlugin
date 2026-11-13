@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+	<changelog>
+		<element>phocamd</element>
+		<type>plugin</type>
+		<version>6.2.0</version>
+		<addition>
+			<item><![CDATA[Added an option to merge the Table of Contents (TOC) directly with the corresponding headings.]]></item>
+		</addition>
+		<note>
+			<item><![CDATA[Tested on Joomla 6.2]]></item>
+			<item><![CDATA[Tested on PHP 8.5]]></item>
+		</note>
+	</changelog>
+</changelogs>

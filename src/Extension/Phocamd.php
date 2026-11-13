@@ -159,8 +159,14 @@ final class Phocamd extends FieldsPlugin implements SubscriberInterface
             $parsedown = new \Parsedown();
             $parsedown->setSafeMode(true);
 
-            $item->introtext = $parsedown->text($introSource);
-            $item->fulltext  = $fulltextSource !== '' ? $parsedown->text($fulltextSource) : '';
+            // Shared between intro and full text so that duplicate heading
+            // slugs stay unique across the whole article.
+            $usedIds = [];
+
+            $item->introtext = $this->addHeadingIds($parsedown->text($introSource), $usedIds);
+            $item->fulltext  = $fulltextSource !== ''
+                ? $this->addHeadingIds($parsedown->text($fulltextSource), $usedIds)
+                : '';
         } catch (\Throwable $e) {
             // Fail-safe: log the error and skip — never corrupt the article
             Log::add(
@@ -169,6 +175,62 @@ final class Phocamd extends FieldsPlugin implements SubscriberInterface
                 'plg_fields_phocamd'
             );
         }
+    }
+
+    // ─── Heading anchors ─────────────────────────────────────────────────
+
+    /**
+     * Add GitHub-style id attributes to all headings (h1–h6) so that links
+     * such as [Intro](#1-introduction) in a table of contents work.
+     *
+     * Parsedown itself does not generate ids. Slug rules mirror GitHub:
+     * lowercase, strip everything except letters/digits/space/_/-, spaces
+     * become hyphens, duplicates get -1, -2, ... suffixes.
+     *
+     * @param   string  $html     HTML produced by Parsedown.
+     * @param   array   &$usedIds Slugs already used in this article.
+     *
+     * @return  string
+     *
+     * @since   1.1.0
+     */
+    private function addHeadingIds(string $html, array &$usedIds): string
+    {
+        return (string) preg_replace_callback(
+            '/<h([1-6])(\s[^>]*)?>(.*?)<\/h\1>/is',
+            function (array $m) use (&$usedIds): string {
+                $level = $m[1];
+                $attrs = $m[2] ?? '';
+                $inner = $m[3];
+
+                // Respect an id that is already present
+                if (preg_match('/\sid\s*=/i', $attrs)) {
+                    return $m[0];
+                }
+
+                $text = html_entity_decode(strip_tags($inner), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+                $slug = mb_strtolower(trim($text), 'UTF-8');
+                $slug = (string) preg_replace('/[^\p{L}\p{M}\p{N}\s_-]/u', '', $slug);
+                $slug = (string) preg_replace('/\s/u', '-', $slug);
+
+                if ($slug === '') {
+                    $slug = 'section';
+                }
+
+                $base = $slug;
+                $i    = 0;
+
+                while (isset($usedIds[$slug])) {
+                    $slug = $base . '-' . (++$i);
+                }
+
+                $usedIds[$slug] = true;
+
+                return '<h' . $level . $attrs . ' id="' . htmlspecialchars($slug, ENT_QUOTES, 'UTF-8') . '">'
+                    . $inner . '</h' . $level . '>';
+            },
+            $html
+        );
     }
 
     // ─── Admin form field customisation ──────────────────────────────────
