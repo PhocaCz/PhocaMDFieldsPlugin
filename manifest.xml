@@ -12,12 +12,12 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaMDFieldsPlugin/releases/download/6.2.0/plg_fields_phocamd_v6.2.0.zip</downloadurl>
 		</downloads>
-		<sha512>8c823e39c4a4159909e32ff83a8d46316a697c284aa9894b58223f0d9aa7fc63dcea91ec5e1d99ab97344352d6b7316ed033ae858f09d3308c4b653300f05208</sha512>
+		<sha512>c06895c604efb093ad043541352b85fc7f7b9de4f9e7228963417e05a3de79f9b9dffda2c0532fc3aff220de170fe5824d66508c38bfa7739751f670bc2e5cf3</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
-		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
-		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<maintainer><![CDATA[ Phoca FOSS & Open Source Community ]]></maintainer>
+		<maintainerurl>https://github.com/PhocaCz</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="6\.*"/>
 		<client>site</client>
