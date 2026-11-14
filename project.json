@@ -15,5 +15,6 @@
 		"Phoca": "https://www.phoca.cz"
 	},
 	"projectColor": "#895ED1",
-	"nameSpace": "Phoca\\Plugin\\Fields\\Phocamd"
+	"nameSpace": "Phoca\\Plugin\\Fields\\Phocamd",
+	"projectBranch": "main"
 }

@@ -8,11 +8,11 @@
 		<type>plugin</type>
 		<version>6.2.0</version>
 		<infourl title="Phoca MD Fields Plugin 6.2.0">https://www.phoca.cz/</infourl>
-		<changelogurl>https://raw.githubusercontent.com/PhocaCz/PhocaMDFieldsPlugin/master/changelog6.xml</changelogurl>
+		<changelogurl>https://raw.githubusercontent.com/PhocaCz/PhocaMDFieldsPlugin/main/changelog6.xml</changelogurl>
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaMDFieldsPlugin/releases/download/6.2.0/plg_fields_phocamd_v6.2.0.zip</downloadurl>
 		</downloads>
-		<sha512>c06895c604efb093ad043541352b85fc7f7b9de4f9e7228963417e05a3de79f9b9dffda2c0532fc3aff220de170fe5824d66508c38bfa7739751f670bc2e5cf3</sha512>
+		<sha512>d05e9f2a5eab6efe98291f76603660d2750f1723c545058b3bab19a1009c61301239c1a39d2327b8f2b79827d55d1917cc45359eb77d59b5329bf52d1419bc72</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>

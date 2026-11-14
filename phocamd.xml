@@ -2,7 +2,7 @@
 <extension type="plugin" group="fields" method="upgrade" version="6.0">
 	<name>plg_fields_phocamd</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>13/11/2026</creationDate>
+	<creationDate>14/11/2026</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
@@ -49,9 +49,9 @@
 			</fieldset>
 		</fields>
 	</config>
-	<changelogurl>https://raw.githubusercontent.com/PhocaCz/PhocaMDFieldsPlugin/master/changelog6.xml</changelogurl>
+	<changelogurl>https://raw.githubusercontent.com/PhocaCz/PhocaMDFieldsPlugin/main/changelog6.xml</changelogurl>
 
 	<updateservers>
-		<server type="extension" name="PLG_FIELDS_PHOCAMD" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaMDFieldsPlugin/master/manifest.xml]]></server>
+		<server type="extension" name="PLG_FIELDS_PHOCAMD" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaMDFieldsPlugin/main/manifest.xml]]></server>
 	</updateservers>
 </extension>

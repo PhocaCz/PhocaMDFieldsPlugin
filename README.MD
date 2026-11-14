@@ -1,4 +1,4 @@
-![Phoca MD Fields Plugin](https://github.com/PhocaCz/PhocaMDFieldsPlugin/blob/master/phocamd.png?raw=true)
+![Phoca MD Fields Plugin](https://github.com/PhocaCz/PhocaMDFieldsPlugin/blob/main/phocamd.png?raw=true)
 
 # Phoca MD Fields Plugin
 
