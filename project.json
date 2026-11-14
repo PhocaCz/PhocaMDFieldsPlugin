@@ -7,7 +7,7 @@
 	"extensionName": "Phoca MD Fields Plugin",
 	"projectInitials" : "MD",
 	"description": "Phoca MD Fields Plugin - provides a custom Markdown field for Joomla articles. Instead of using a WYSIWYG editor like TinyMCE, you write your content in pure Markdown. On saving the article, the plugin automatically converts your Markdown into clean HTML and injects it directly into the standard Joomla Introtext and Fulltext fields.",
-	"projectUrl": "https://www.phoca.cz/",
+	"projectUrl": "https://www.phoca.cz/phoca-md-fields-plugin",
 	"projectDocumentationUrl": "https://www.phoca.cz/documentation/",
 	"projectMainComponent": "",
 	"projectMainComponentInfoUrl": "",
