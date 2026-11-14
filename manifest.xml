@@ -12,7 +12,7 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaMDFieldsPlugin/releases/download/6.2.0/plg_fields_phocamd_v6.2.0.zip</downloadurl>
 		</downloads>
-		<sha512>e3c6545c296718213891f511aa0351218cec95d4dc43069e752efc7686fdc3376e136ab42ed392a77fd4b6b290996fbd4ba2e95405fd50de70bbd2c94927f1cb</sha512>
+		<sha512>2cd3b5675c3c65df6346f6e531bcc6a79290d043c4486a7695ce15c3f586ba95a6697526595cac0b8f5a6544596fe51cd53aef4d3f2b56428047aeaeb09cbd91</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>

@@ -31,7 +31,7 @@ If you need additional information beyond this GitHub repository, further docume
 
 #### External Project Information
 
-- [Phoca MD Fields Plugin](https://www.phoca.cz/)
+- [Phoca MD Fields Plugin](https://www.phoca.cz/phoca-md-fields-plugin)
 - [Project is listed on Joomla Extensions Directory](https://extensions.joomla.org/)
 - [Project is listed on Phoca download directory](https://www.phoca.cz/download)
 
